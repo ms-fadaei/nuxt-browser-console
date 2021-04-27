@@ -1,10 +1,10 @@
 # nuxt-browser-logger
 
 [![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
-[![Codecov][codecov-src]][codecov-href]
-[![License][license-src]][license-href]
+<!-- [![npm downloads][npm-downloads-src]][npm-downloads-href] -->
+<!-- [![Github Actions CI][github-actions-ci-src]][github-actions-ci-href] -->
+<!-- [![Codecov][codecov-src]][codecov-href] -->
+<!-- [![License][license-src]][license-href] -->
 
 > With this module, you can use console functions to show your message/data. No matter you are using this module inside the server-side or client-side events, the message is always shown in the browser console. This is good for monitoring server events on production (for example, Axios calls and response from server/asyncData functions can be logged into the browser console).
 
@@ -51,11 +51,11 @@ Copyright (c) Mohammad Saleh Fadaei (@ms.fadaei1997)
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-browser-logger.svg
 [npm-downloads-href]: https://npmjs.com/package/nuxt-browser-logger
 
-#[github-actions-ci-src]: https://github.com/{{ github }}/workflows/ci/badge.svg
-#[github-actions-ci-href]: https://github.com/{{ github }}/actions?query=workflow%3Aci
+[github-actions-ci-src]: https://github.com/ms-fadaei/nuxt-browser-logger/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/ms-fadaei/nuxt-browser-logger/actions?query=workflow%3Aci
 
-#[codecov-src]: https://img.shields.io/codecov/c/github/{{ github }}.svg
-#[codecov-href]: https://codecov.io/gh/{{ github }}
+[codecov-src]: https://img.shields.io/codecov/c/github/ms-fadaei/nuxt-browser-logger.svg
+[codecov-href]: https://codecov.io/gh/ms-fadaei/nuxt-browser-logger
 
 [license-src]: https://img.shields.io/npm/l/nuxt-browser-logger.svg
 [license-href]: https://npmjs.com/package/nuxt-browser-logger
