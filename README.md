@@ -1,10 +1,10 @@
 # nuxt-browser-logger
 
 [![npm version][npm-version-src]][npm-version-href]
-<!-- [![npm downloads][npm-downloads-src]][npm-downloads-href] -->
-<!-- [![Github Actions CI][github-actions-ci-src]][github-actions-ci-href] -->
-<!-- [![Codecov][codecov-src]][codecov-href] -->
-<!-- [![License][license-src]][license-href] -->
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
+[![Codecov][codecov-src]][codecov-href]
+[![License][license-src]][license-href]
 
 > With this module, you can use console functions to show your message/data. No matter you are using this module inside the server-side or client-side events, the message is always shown in the browser console. This is good for monitoring server events on production (for example, Axios calls and response from server/asyncData functions can be logged into the browser console).
 
