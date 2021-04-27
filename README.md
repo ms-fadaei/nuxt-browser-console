@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> {{ description }}
+> With this module, you can use console functions to show your message/data. No matter you are using this module inside the server-side or client-side events, the message is always shown in the browser console. This is good for monitoring server events on production (for example, Axios calls and response from server/asyncData functions can be logged into the browser console).
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
