@@ -1,4 +1,4 @@
-# {{ name }}
+# nuxt-browser-logger
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -12,22 +12,22 @@
 
 ## Setup
 
-1. Add `{{ name }}` dependency to your project
+1. Add `nuxt-browser-logger` dependency to your project
 
 ```bash
-yarn add {{ name }} # or npm install {{ name }}
+yarn add nuxt-browser-logger # or npm install nuxt-browser-logger
 ```
 
-2. Add `{{ name }}` to the `modules` section of `nuxt.config.js`
+2. Add `nuxt-browser-logger` to the `modules` section of `nuxt.config.js`
 
 ```js
 {
   modules: [
     // Simple usage
-    '{{ name }}',
+    'nuxt-browser-logger',
 
     // With options
-    ['{{ name }}', { /* module options */ }]
+    ['nuxt-browser-logger', { /* module options */ }]
   ]
 }
 ```
@@ -42,20 +42,20 @@ yarn add {{ name }} # or npm install {{ name }}
 
 [MIT License](./LICENSE)
 
-Copyright (c) {{ author }}
+Copyright (c) Mohammad Saleh Fadaei (@ms.fadaei1997)
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/{{ name }}/latest.svg
-[npm-version-href]: https://npmjs.com/package/{{ name }}
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-browser-logger/latest.svg
+[npm-version-href]: https://npmjs.com/package/nuxt-browser-logger
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/{{ name }}.svg
-[npm-downloads-href]: https://npmjs.com/package/{{ name }}
+[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-browser-logger.svg
+[npm-downloads-href]: https://npmjs.com/package/nuxt-browser-logger
 
-[github-actions-ci-src]: https://github.com/{{ github }}/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/{{ github }}/actions?query=workflow%3Aci
+#[github-actions-ci-src]: https://github.com/{{ github }}/workflows/ci/badge.svg
+#[github-actions-ci-href]: https://github.com/{{ github }}/actions?query=workflow%3Aci
 
-[codecov-src]: https://img.shields.io/codecov/c/github/{{ github }}.svg
-[codecov-href]: https://codecov.io/gh/{{ github }}
+#[codecov-src]: https://img.shields.io/codecov/c/github/{{ github }}.svg
+#[codecov-href]: https://codecov.io/gh/{{ github }}
 
-[license-src]: https://img.shields.io/npm/l/{{ name }}.svg
-[license-href]: https://npmjs.com/package/{{ name }}
+[license-src]: https://img.shields.io/npm/l/nuxt-browser-logger.svg
+[license-href]: https://npmjs.com/package/nuxt-browser-logger
