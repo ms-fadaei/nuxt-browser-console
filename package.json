@@ -1,6 +1,6 @@
 {
   "name": "nuxt-browser-console",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "With this module, you can use console functions to show your message/data.",
   "repository": "git://github.com/ms-fadaei/nuxt-browser-console.git",
   "license": "MIT",
@@ -37,6 +37,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   }
 }
