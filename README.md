@@ -72,11 +72,20 @@ export default function ({$axios, app}) {
   const style = "background: #d32f2f;border-radius: 0.5em;color: white;font-weight: bold;padding: 2px 0.5em;";
 
   $axios.interceptors.response.use((x) => {
-    app.$console('groupCollapsed', `%cRequest to ${x.config.url.split("?")[0]}`, style); // console.groupCollapsed(`%cRequest to ${x.config.url.split("?")[0]}`, style)
-    app.$console('info', 'URL:', `${x.config.baseURL}${x.config.url}`); // console.info('URL:', `${x.config.baseURL}${x.config.url}`)
-    app.$console('info', 'Method:', x.config.method.toUpperCase()); // console.info('Method:', x.config.method.toUpperCase())
-    app.$console('info', 'Status:', `${x.statusText || 'OK'} (${x.status})`); // console.info('Status:', `${x.statusText || 'OK'} (${x.status})`)
-    app.$console('groupEnd'); // console.groupEnd()
+    // console.groupCollapsed(`%cRequest to ${x.config.url.split("?")[0]}`, style)
+    app.$console('groupCollapsed', `%cRequest to ${x.config.url.split("?")[0]}`, style);
+    
+    // console.info('URL:', `${x.config.baseURL}${x.config.url}`)
+    app.$console('info', 'URL:', `${x.config.baseURL}${x.config.url}`);
+    
+    // console.info('Method:', x.config.method.toUpperCase())
+    app.$console('info', 'Method:', x.config.method.toUpperCase());
+    
+    // console.info('Status:', `${x.statusText || 'OK'} (${x.status})`)
+    app.$console('info', 'Status:', `${x.statusText || 'OK'} (${x.status})`);
+    
+    // console.groupEnd()
+    app.$console('groupEnd');
 
     return x;
   });
