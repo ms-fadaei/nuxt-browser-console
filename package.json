@@ -4,6 +4,11 @@
   "description": "show server-side & clinet-side logs/errors/warnings inside browser console",
   "repository": "git://github.com/ms-fadaei/nuxt-browser-console.git",
   "license": "MIT",
+  "keywords": [
+    "nuxt",
+    "nuxt-modules",
+    "console-log"
+  ],
   "author": {
     "name": "Mohammad Saleh Fadaei",
     "email": "ms.fadaei1997@gmail.com",
@@ -25,14 +30,15 @@
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@nuxt/test-utils": "latest",
     "@nuxtjs/eslint-config": "latest",
-    "@nuxtjs/module-test-utils": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "eslint": "latest",
     "husky": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
+    "playwright": "^1.10.0",
     "standard-version": "latest"
   },
   "publishConfig": {
