@@ -98,7 +98,7 @@ export default function ({$axios, app}) {
 2. Install dependencies using `yarn install` or `npm install`
 3. Start development server using `npm run dev`
 
-## TODOs
+## Todo
 
 * [ ] Add unit test
 * [ ] Release first stable major version (v1.0.0)
