@@ -38,6 +38,7 @@
     "husky": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
+    "playwright": "^1.10.0",
     "standard-version": "latest"
   },
   "publishConfig": {
