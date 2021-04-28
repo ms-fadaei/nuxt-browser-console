@@ -4,6 +4,11 @@
   "description": "show server-side & clinet-side logs/errors/warnings inside browser console",
   "repository": "git://github.com/ms-fadaei/nuxt-browser-console.git",
   "license": "MIT",
+  "keywords": [
+    "nuxt",
+    "nuxt-modules",
+    "console-log"
+  ],
   "author": {
     "name": "Mohammad Saleh Fadaei",
     "email": "ms.fadaei1997@gmail.com",
