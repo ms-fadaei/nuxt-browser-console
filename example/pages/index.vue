@@ -9,12 +9,12 @@ const defaultStyle = 'background: #1b5e20;border-radius: 0.5em;color: white;font
 
 export default {
   asyncData ({ app, route }) {
-    app.$log('groupCollapsed', `%cRoute: ${route.fullPath}`, defaultStyle)
-    app.$log('info', 'Message:', `this is ${process.server ? 'server' : 'client'} side log`)
-    app.$log('groupEnd')
+    app.$console('groupCollapsed', `%cRoute: ${route.fullPath}`, defaultStyle)
+    app.$console('info', 'Message:', `this is ${process.server ? 'server' : 'client'} side log`)
+    app.$console('groupEnd')
   },
   mounted () {
-    this.$log('log', 'The page has mounted!')
+    this.$console('log', 'The page has mounted!')
   }
 }
 </script>
