@@ -16,15 +16,15 @@ describe('setup module without config', () => {
   test('should inject plugin', () => {
     // inject plugin
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringContaining('store\\index.js'),
-      fileName: 'console\\store\\index.js',
+      src: expect.stringMatching(/store/),
+      fileName: expect.stringMatching(/store/),
       options: defaultConfig
     })
 
     // inject store
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringContaining('plugins\\index.js'),
-      fileName: 'console\\plugins\\index.js',
+      src: expect.stringMatching(/plugins/),
+      fileName: expect.stringMatching(/plugins/),
       options: defaultConfig
     })
   })
@@ -43,19 +43,17 @@ describe('setup module with config', () => {
   })
 
   test('should inject plugin', () => {
-    const { namespace } = getNuxt().options.browserConsole
-
     // inject plugin
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringContaining('store\\index.js'),
-      fileName: `${namespace}\\store\\index.js`,
+      src: expect.stringMatching(/store/),
+      fileName: expect.stringMatching(/store/),
       options: getNuxt().options.browserConsole
     })
 
     // inject store
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringContaining('plugins\\index.js'),
-      fileName: `${namespace}\\plugins\\index.js`,
+      src: expect.stringMatching(/plugins/),
+      fileName: expect.stringMatching(/plugins/),
       options: getNuxt().options.browserConsole
     })
   })
