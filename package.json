@@ -4,11 +4,11 @@
   "description": "With this module, you can use console functions to show your message/data.",
   "repository": "https://github.com/ms-fadaei/nuxt-browser-logger.git",
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Mohammad Saleh Fadaei (@ms.fadaei1997)"
-    }
-  ],
+  "author": {
+      "name": "Mohammad Saleh Fadaei",
+      "email": "ms.fadaei1997@gmail.com",
+      "url": "https://twitter.com/ms_fadaei"
+  },
   "files": [
     "lib"
   ],

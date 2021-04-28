@@ -42,7 +42,7 @@ yarn add nuxt-browser-logger # or npm install nuxt-browser-logger
 
 [MIT License](./LICENSE)
 
-Copyright (c) Mohammad Saleh Fadaei (@ms.fadaei1997)
+Copyright (c) Mohammad Saleh Fadaei ([@ms-fadaei](https://github.com/ms-fadaei))
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-browser-logger/latest.svg
