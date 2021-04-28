@@ -100,6 +100,7 @@ export default function ({$axios, app}) {
 
 ## Todo
 
+* [x] Complete README
 * [ ] Add unit test
 * [ ] Release first stable major version (v1.0.0)
 
