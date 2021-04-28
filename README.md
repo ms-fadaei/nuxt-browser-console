@@ -34,7 +34,7 @@ yarn add nuxt-browser-console # or npm install nuxt-browser-console
     // With options
     ['nuxt-browser-console', { /* module options */ }]
   ],
-  windowConsole: {
+  browserConsole: {
     /* module options */
   }
 }
@@ -51,8 +51,8 @@ Module default options:
 
 ```js
 {
-  windowConsole: {
-    namespce: 'console'
+  browserConsole: {
+    namespace: 'console'
   }
 }
 ```
