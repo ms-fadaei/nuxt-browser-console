@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-browser-logger",
+  "name": "nuxt-browser-console",
   "version": "0.1.1",
   "description": "With this module, you can use console functions to show your message/data.",
-  "repository": "https://github.com/ms-fadaei/nuxt-browser-logger.git",
+  "repository": "https://github.com/ms-fadaei/nuxt-browser-console.git",
   "license": "MIT",
   "author": {
     "name": "Mohammad Saleh Fadaei",

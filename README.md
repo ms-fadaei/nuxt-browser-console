@@ -1,4 +1,4 @@
-# nuxt-browser-logger
+# nuxt-browser-console
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -12,22 +12,22 @@
 
 ## Setup
 
-1. Add `nuxt-browser-logger` dependency to your project
+1. Add `nuxt-browser-console` dependency to your project
 
 ```bash
-yarn add nuxt-browser-logger # or npm install nuxt-browser-logger
+yarn add nuxt-browser-console # or npm install nuxt-browser-console
 ```
 
-2. Add `nuxt-browser-logger` to the `modules` section of `nuxt.config.js`
+2. Add `nuxt-browser-console` to the `modules` section of `nuxt.config.js`
 
 ```js
 {
   modules: [
     // Simple usage
-    'nuxt-browser-logger',
+    'nuxt-browser-console',
 
     // With options
-    ['nuxt-browser-logger', { /* module options */ }]
+    ['nuxt-browser-console', { /* module options */ }]
   ]
 }
 ```
@@ -45,17 +45,17 @@ yarn add nuxt-browser-logger # or npm install nuxt-browser-logger
 Copyright (c) Mohammad Saleh Fadaei ([@ms-fadaei](https://github.com/ms-fadaei))
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-browser-logger/latest.svg
-[npm-version-href]: https://npmjs.com/package/nuxt-browser-logger
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-browser-console/latest.svg
+[npm-version-href]: https://npmjs.com/package/nuxt-browser-console
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-browser-logger.svg
-[npm-downloads-href]: https://npmjs.com/package/nuxt-browser-logger
+[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-browser-console.svg
+[npm-downloads-href]: https://npmjs.com/package/nuxt-browser-console
 
-[github-actions-ci-src]: https://github.com/ms-fadaei/nuxt-browser-logger/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/ms-fadaei/nuxt-browser-logger/actions?query=workflow%3Aci
+[github-actions-ci-src]: https://github.com/ms-fadaei/nuxt-browser-console/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/ms-fadaei/nuxt-browser-console/actions?query=workflow%3Aci
 
-[codecov-src]: https://img.shields.io/codecov/c/github/ms-fadaei/nuxt-browser-logger.svg
-[codecov-href]: https://codecov.io/gh/ms-fadaei/nuxt-browser-logger
+[codecov-src]: https://img.shields.io/codecov/c/github/ms-fadaei/nuxt-browser-console.svg
+[codecov-href]: https://codecov.io/gh/ms-fadaei/nuxt-browser-console
 
-[license-src]: https://img.shields.io/npm/l/nuxt-browser-logger.svg
-[license-href]: https://npmjs.com/package/nuxt-browser-logger
+[license-src]: https://img.shields.io/npm/l/nuxt-browser-console.svg
+[license-href]: https://npmjs.com/package/nuxt-browser-console
