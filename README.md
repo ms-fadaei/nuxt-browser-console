@@ -60,7 +60,7 @@ Module default options:
 ## Usage
 You can simply use this module through `this` or context `app` inside plugins, components, pages and etc.
 
-The first parameter is the function name that you want to use.
+The first argument is the function name that you want to use.
 ```js
   this.$console("log", ...args)
 ```
