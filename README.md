@@ -60,12 +60,12 @@ Module default options:
 ## Usage
 You can simply use this module through `this` or context `app` inside plugins, components, pages and etc.
 
-The first argument of this function is the name of the console function that you want to use. You can pass the console function arguments as the rest of the arguments.
+The first parameter is the function name that you want to use.
 ```js
   this.$console("log", ...args)
 ```
 
-Here is a simple usage of this module to log Axios requests in the console (server-side and client-side requests).
+Here, there is an example to show some information about Axios response in the browser console (no matter server-side/client-side).
 ```js
 export default function ({$axios, app}) {
 
