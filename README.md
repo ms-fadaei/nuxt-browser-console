@@ -6,24 +6,21 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> show server-side & client-side logs/errors/warnings inside browser console <br>
-> ⚠ WARNING: This package use vuex to store server-side logs ⚠
+> receive server-side and client-side logs/errors/warnings inside the browser console <br>
 
-With this module, you can use console functions to show your message/data. No matter you are using this module inside the server-side or client-side events, the message is always shown in the browser console. This is good for monitoring server events on production (for example, Axios request and response inside asyncData function can be logged into the browser console).
+With this module, you can use browser console methods. No matter you are using this module inside the server or client, the messages are always shown in the browser console. A good and cheap way to monitoring server events in the production environment (for example, Axios request and response information can be logged into the browser console).
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## Setup
 
-1. Make sure the store is active in your project ([see how](https://nuxtjs.org/docs/2.x/directory-structure/store/#activate-the-store))
-
-2. Add `nuxt-browser-console` dependency with `yarn` or `npm` to your project
+1. Add `nuxt-browser-console` dependency with `yarn` or `npm` to your project
 
 ```bash
 yarn add nuxt-browser-console # or npm install nuxt-browser-console
 ```
 
-3. Add `nuxt-browser-console` to the `modules` section of `nuxt.config.js`
+2. Add `nuxt-browser-console` to the `modules` section of `nuxt.config.js`
 
 ```js
 {
@@ -46,7 +43,7 @@ Module default options:
 
 | Option | Default | Description |
 | ------ | ------- | ----------- |
-| namespace | `console` | the handler of module. `this.$console(...)` or `app.$console(...)` |
+| namespace | `console` | the namespace of the module. `this.$console(...)` or `$console(...)` inserted fom nuxt [context](https://nuxtjs.org/docs/2.x/concepts/context-helpers) |
 
 
 ```js
@@ -58,34 +55,34 @@ Module default options:
 ```
 
 ## Usage
-You can simply use this module through `this` or context `app` inside plugins, components, pages and etc.
+You can simply use this module through `this` or context `$console` almost every where in your nuxt app.
 
-The first argument is the function name that you want to use.
+The first argument is the name of console method that you want to use.
 ```js
   this.$console("log", ...args)
 ```
 
-Here, there is an example to show some information about Axios response in the browser console (no matter server-side/client-side).
+An example to show how we can use this module to log some data inside the browser (no matter server-side/client-side).
 ```js
-export default function ({$axios, app}) {
+export default function ({$axios, $console}) {
 
   const style = "background: #d32f2f;border-radius: 0.5em;color: white;font-weight: bold;padding: 2px 0.5em;";
 
   $axios.interceptors.response.use((x) => {
     // console.groupCollapsed(`%cRequest to ${x.config.url.split("?")[0]}`, style)
-    app.$console('groupCollapsed', `%cRequest to ${x.config.url.split("?")[0]}`, style);
+    $console('groupCollapsed', `%cRequest to ${x.config.url.split("?")[0]}`, style);
     
     // console.info('URL:', `${x.config.baseURL}${x.config.url}`)
-    app.$console('info', 'URL:', `${x.config.baseURL}${x.config.url}`);
+    $console('info', 'URL:', `${x.config.baseURL}${x.config.url}`);
     
     // console.info('Method:', x.config.method.toUpperCase())
-    app.$console('info', 'Method:', x.config.method.toUpperCase());
+    $console('info', 'Method:', x.config.method.toUpperCase());
     
     // console.info('Status:', `${x.statusText || 'OK'} (${x.status})`)
-    app.$console('info', 'Status:', `${x.statusText || 'OK'} (${x.status})`);
+    $console('info', 'Status:', `${x.statusText || 'OK'} (${x.status})`);
     
     // console.groupEnd()
-    app.$console('groupEnd');
+    $console('groupEnd');
 
     return x;
   });
@@ -96,13 +93,11 @@ export default function ({$axios, app}) {
 
 1. Clone this repository
 2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
+3. Start development server using `yarn dev` or `npm run dev`
 
 ## Todo
 
-* [x] Complete README
-* [x] Add test
-* [x] Release first stable major version (v1.0.0)
+* [ ] error stack trace correction
 
 ## License
 
