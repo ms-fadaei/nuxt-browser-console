@@ -9,7 +9,7 @@ export default {
   asyncData ({ app, route }) {
     app.$console('groupCollapsed', `Route: ${route.fullPath}`)
     app.$console('info', 'Message:', `this is ${process.server ? 'server' : 'client'} side log`)
-    app.$console('warn', 'this is a warning!')
+    app.$console('warn', 'this is a warning1!')
     app.$console('groupEnd')
   },
   mounted () {
