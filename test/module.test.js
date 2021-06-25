@@ -14,17 +14,10 @@ describe('setup module without config', () => {
   }
 
   test('should inject plugin', () => {
-    // inject plugin
-    expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringMatching(/store/),
-      fileName: expect.stringMatching(/store/),
-      options: defaultConfig
-    })
-
     // inject store
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringMatching(/plugins/),
-      fileName: expect.stringMatching(/plugins/),
+      src: expect.stringMatching(/plugins[\\/]index\.js/),
+      fileName: expect.stringMatching(/console[\\/]plugins[\\/]index\.js/),
       options: defaultConfig
     })
   })
@@ -43,17 +36,10 @@ describe('setup module with config', () => {
   })
 
   test('should inject plugin', () => {
-    // inject plugin
-    expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringMatching(/store/),
-      fileName: expect.stringMatching(/store/),
-      options: getNuxt().options.browserConsole
-    })
-
     // inject store
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringMatching(/plugins/),
-      fileName: expect.stringMatching(/plugins/),
+      src: expect.stringMatching(/plugins[\\/]index\.js/),
+      fileName: expect.stringMatching(/logs[\\/]plugins[\\/]index\.js/),
       options: getNuxt().options.browserConsole
     })
   })
