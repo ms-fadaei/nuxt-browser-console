@@ -6,11 +6,11 @@
 
 <script>
 export default {
-  asyncData ({ app, route }) {
-    app.$console('groupCollapsed', `Route: ${route.fullPath}`)
-    app.$console('info', 'Message:', `this is ${process.server ? 'server' : 'client'} side log`)
-    app.$console('warn', 'this is a warning1!')
-    app.$console('groupEnd')
+  asyncData ({ $console, route }) {
+    $console('groupCollapsed', `Route: ${route.fullPath}`)
+    $console('info', 'Message:', `this is ${process.server ? 'server' : 'client'} side log`)
+    $console('warn', 'this is a warning1!')
+    $console('groupEnd')
   },
   mounted () {
     this.$console('log', 'The page has been mounted!')
