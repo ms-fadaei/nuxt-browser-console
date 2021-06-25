@@ -26,16 +26,6 @@ describe('example project test', () => {
     fixture: 'example',
     rootDir: resolve(__dirname, '../example'),
     browser: true
-    // browserOptions: {
-    //   type: 'chromium',
-    //   launch: {
-    //     logger: {
-    //       isEnabled: (name, severity) => true,
-    //       // eslint-disable-next-line no-console
-    //       log: (name, severity, message, args) => console.log(`${name} ${message}`)
-    //     }
-    //   }
-    // }
   })
 
   test('should render page', async () => {

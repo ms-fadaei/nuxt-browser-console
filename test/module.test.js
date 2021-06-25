@@ -14,13 +14,6 @@ describe('setup module without config', () => {
   }
 
   test('should inject plugin', () => {
-    // inject plugin
-    expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringMatching(/store[\\/]index\.js/),
-      fileName: expect.stringMatching(/console[\\/]store[\\/]index\.js/),
-      options: defaultConfig
-    })
-
     // inject store
     expectModuleToBeCalledWith('addPlugin', {
       src: expect.stringMatching(/plugins[\\/]index\.js/),
@@ -43,13 +36,6 @@ describe('setup module with config', () => {
   })
 
   test('should inject plugin', () => {
-    // inject plugin
-    expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringMatching(/store[\\/]index\.js/),
-      fileName: expect.stringMatching(/logs[\\/]store[\\/]index\.js/),
-      options: getNuxt().options.browserConsole
-    })
-
     // inject store
     expectModuleToBeCalledWith('addPlugin', {
       src: expect.stringMatching(/plugins[\\/]index\.js/),
