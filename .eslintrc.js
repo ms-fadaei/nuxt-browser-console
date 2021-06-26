@@ -5,6 +5,19 @@ module.exports = {
     sourceType: 'module'
   },
   extends: [
-    '@nuxtjs'
-  ]
+    '@nuxtjs',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended'
+  ],
+  plugins: [],
+  rules: {
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always'
+      }
+    ]
+  }
 }
