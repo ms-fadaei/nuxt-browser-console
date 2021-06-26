@@ -43,7 +43,7 @@ Module default options:
 
 | Option | Default | Description |
 | ------ | ------- | ----------- |
-| namespace | `console` | the namespace of the module. `this.$console(...)` or `$console(...)` inserted fom nuxt [context](https://nuxtjs.org/docs/2.x/concepts/context-helpers) |
+| namespace | `console` | the namespace of the module. `this.$console.log(...)` or `$console.log(...)` inserted fom nuxt [context](https://nuxtjs.org/docs/2.x/concepts/context-helpers) |
 
 
 ```js
@@ -55,34 +55,39 @@ Module default options:
 ```
 
 ## Usage
-You can simply use this module through `this` or context `$console` almost every where in your nuxt app.
+You can simply use this module through `this` or context `$console` almost every where in your Nuxt app.
 
-The first argument is the name of console method that you want to use.
 ```js
-  this.$console("log", ...args)
+  this.$console.log(...args)
 ```
 
-An example to show how we can use this module to log some data inside the browser (no matter server-side/client-side).
+Available methods:
+```js
+$console.log(obj1 [, obj2, ..., objN])
+$console.info(obj1 [, obj2, ..., objN])
+$console.warn(obj1 [, obj2, ..., objN])
+$console.error(obj1 [, obj2, ..., objN])
+$console.clear()
+$console.groupCollapsed([label])
+$console.groupEnd()
+```
+
+An example to show how to use this module to log some data inside the browser (no matter server-side/client-side).
 ```js
 export default function ({$axios, $console}) {
 
   const style = "background: #d32f2f;border-radius: 0.5em;color: white;font-weight: bold;padding: 2px 0.5em;";
 
   $axios.interceptors.response.use((x) => {
-    // console.groupCollapsed(`%cRequest to ${x.config.url.split("?")[0]}`, style)
-    $console('groupCollapsed', `%cRequest to ${x.config.url.split("?")[0]}`, style);
+    $console.groupCollapsed('', `%cRequest to ${x.config.url.split("?")[0]}`, style);
+
+    $console.info('URL:', `${x.config.baseURL}${x.config.url}`);
+
+    $console.info('Method:', x.config.method.toUpperCase());
+
+    $console.info('Status:', `${x.statusText || 'OK'} (${x.status})`);
     
-    // console.info('URL:', `${x.config.baseURL}${x.config.url}`)
-    $console('info', 'URL:', `${x.config.baseURL}${x.config.url}`);
-    
-    // console.info('Method:', x.config.method.toUpperCase())
-    $console('info', 'Method:', x.config.method.toUpperCase());
-    
-    // console.info('Status:', `${x.statusText || 'OK'} (${x.status})`)
-    $console('info', 'Status:', `${x.statusText || 'OK'} (${x.status})`);
-    
-    // console.groupEnd()
-    $console('groupEnd');
+    $console.groupEnd();
 
     return x;
   });
