@@ -18,6 +18,12 @@ module.exports = {
         named: 'never',
         asyncArrow: 'always'
       }
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto'
+      }
     ]
   }
 }
