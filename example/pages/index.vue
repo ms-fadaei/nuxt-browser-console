@@ -5,17 +5,16 @@
 <script>
 export default {
   asyncData({ $console, route }) {
-    $console('groupCollapsed', `Route: ${route.fullPath}`)
-    $console(
-      'info',
+    $console.groupCollapsed(`Route: ${route.fullPath}`)
+    $console.info(
       'Message:',
       `this is ${process.server ? 'server' : 'client'} side log`
     )
-    $console('warn', 'this is a warning!')
-    $console('groupEnd')
+    $console.warn('this is a warning!')
+    $console.groupEnd()
   },
   mounted() {
-    this.$console('log', 'The page has been mounted!')
+    this.$console.log('The page has been mounted!')
   }
 }
 </script>
