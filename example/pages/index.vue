@@ -1,18 +1,20 @@
 <template>
-  <div>
-    Works!
-  </div>
+  <div>Works!</div>
 </template>
 
 <script>
 export default {
-  asyncData ({ $console, route }) {
+  asyncData({ $console, route }) {
     $console('groupCollapsed', `Route: ${route.fullPath}`)
-    $console('info', 'Message:', `this is ${process.server ? 'server' : 'client'} side log`)
+    $console(
+      'info',
+      'Message:',
+      `this is ${process.server ? 'server' : 'client'} side log`
+    )
     $console('warn', 'this is a warning!')
     $console('groupEnd')
   },
-  mounted () {
+  mounted() {
     this.$console('log', 'The page has been mounted!')
   }
 }

@@ -1,4 +1,8 @@
-import { setupTest, expectModuleToBeCalledWith, getNuxt } from '@nuxt/test-utils'
+import {
+  setupTest,
+  expectModuleToBeCalledWith,
+  getNuxt
+} from '@nuxt/test-utils'
 const { resolve } = require('path')
 
 describe('setup module without config', () => {
