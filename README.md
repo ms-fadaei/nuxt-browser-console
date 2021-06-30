@@ -103,7 +103,7 @@ export default function ({$axios, $console}) {
 ## Todo
 
 * [ ] error stack trace correction
-* [ ] module separation
+* [x] module separation
 
 ## License
 
