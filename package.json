@@ -46,7 +46,7 @@
     "husky": "6.0.0",
     "jest": "27.0.6",
     "lint-staged": "11.0.0",
-    "nuxt-edge": "2.16.0-27082097.eb6bd9fe",
+    "nuxt-edge": "2.16.0-27083531.eb6bd9fe",
     "playwright": "1.12.3",
     "prettier": "2.3.2",
     "standard-version": "9.3.0"
