@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ms-fadaei/nuxt-browser-console/compare/v1.1.0...v1.2.0) (2021-06-30)
+
+
+### Features
+
+* use JSON to transform the data ([d855d11](https://github.com/ms-fadaei/nuxt-browser-console/commit/d855d1138cd3f7d3bb0c31cb7681a8f18fe67d44))
+* use native console API on client side ([4b73e35](https://github.com/ms-fadaei/nuxt-browser-console/commit/4b73e35ec645e4a69f178a990dfc1f0ac0cd955b))
+
+
+### Bug Fixes
+
+* only attach reports to the global nuxt if there is a report ([b2d0f3c](https://github.com/ms-fadaei/nuxt-browser-console/commit/b2d0f3cd403d687fdb20ce71d9a26d8224602e59))
+
 ## [1.1.0](https://github.com/ms-fadaei/nuxt-browser-console/compare/v1.0.0...v1.1.0) (2021-06-26)
 
 

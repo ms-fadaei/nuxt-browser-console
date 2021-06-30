@@ -1,6 +1,6 @@
 {
   "name": "nuxt-browser-console",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "show server-side & clinet-side logs/errors/warnings inside browser console",
   "repository": "git://github.com/ms-fadaei/nuxt-browser-console.git",
   "license": "MIT",
