@@ -31,7 +31,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.16.0",
-    "@babel/eslint-parser": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
     "@babel/preset-env": "7.16.0",
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
@@ -46,7 +46,7 @@
     "husky": "7.0.4",
     "jest": "27.3.1",
     "lint-staged": "11.2.6",
-    "nuxt-edge": "2.16.0-27272174.ab1c6cb4",
+    "nuxt-edge": "2.16.0-27277936.ab1c6cb4",
     "playwright": "1.16.3",
     "prettier": "2.4.1",
     "standard-version": "9.3.2"
