@@ -1,6 +1,7 @@
-import { resolve } from 'path'
+import { resolve, join } from 'path'
 import { fileURLToPath } from 'url'
-import { defineNuxtModule, addPlugin } from '@nuxt/kit'
+import { readdirSync } from 'fs'
+import { defineNuxtModule, addPluginTemplate, addTemplate } from '@nuxt/kit'
 
 export interface ModuleOptions {
   namespace: string
@@ -15,10 +16,32 @@ export default defineNuxtModule<ModuleOptions>({
     namespace: 'console'
   },
   setup (options, nuxt) {
-    // if (options.addPlugin) {
+    const { namespace } = options
+
+    // transpile runtime directories
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-    nuxt.options.build.transpile.push(runtimeDir)
-    addPlugin(resolve(runtimeDir, 'plugin'))
-    // }
+
+    // add all of the initial plugins
+    const pluginsToSync = ['plugin.server.ts', 'plugin.client.ts']
+
+    for (const pathString of pluginsToSync) {
+      addPluginTemplate({
+        src: resolve(runtimeDir, pathString),
+        fileName: join(namespace, pathString),
+        options
+      })
+    }
+
+    // sync all of the files and folders to relevant places in the nuxt build dir (.nuxt/)
+    const foldersToSync = ['helpers']
+    for (const pathString of foldersToSync) {
+      const path = resolve(runtimeDir, pathString)
+      for (const file of readdirSync(path)) {
+        addTemplate({
+          src: resolve(path, file),
+          fileName: join(namespace, pathString, file)
+        })
+      }
+    }
   }
 })
