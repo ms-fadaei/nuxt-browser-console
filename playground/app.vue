@@ -6,5 +6,13 @@
 
 <script setup>
 const { $console } = useNuxtApp()
-$console.log('Hello from Nuxt module playground form ' + (process.server ? 'server' : 'client'))
+
+$console.groupCollapsed("Route: '/'")
+$console.info('Message:', `this is ${process.server ? 'server' : 'client'} side log`)
+$console.warn('this is a warning!')
+$console.groupEnd()
+
+onMounted(() => {
+  $console.log('The page has been mounted!')
+})
 </script>
