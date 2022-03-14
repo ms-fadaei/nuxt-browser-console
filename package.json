@@ -1,8 +1,19 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
+  "name": "nuxt-browser-console",
+  "version": "1.2.0",
+  "description": "show server-side & clinet-side logs/errors/warnings inside browser console",
+  "repository": "git://github.com/ms-fadaei/nuxt-browser-console.git",
   "license": "MIT",
-  "type": "module",
+  "keywords": [
+    "nuxt",
+    "nuxt-modules",
+    "console-log"
+  ],
+  "author": {
+    "name": "Mohammad Saleh Fadaei",
+    "email": "ms.fadaei1997@gmail.com",
+    "url": "https://twitter.com/ms_fadaei"
+  },
   "exports": {
     ".": {
       "import": "./dist/module.mjs",
@@ -10,6 +21,7 @@
     }
   },
   "main": "./dist/module.cjs",
+  "module": "./dist/module.mjs",
   "types": "./dist/types.d.ts",
   "files": [
     "dist"
@@ -25,8 +37,12 @@
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
-    "@nuxtjs/eslint-config-typescript": "latest",
-    "eslint": "latest",
-    "nuxt3": "latest"
+    "@nuxtjs/eslint-config-typescript": "9.0.0",
+    "eslint": "8.11.0",
+    "nuxt3": "3.0.0-27453291.e891ea0",
+    "standard-version": "9.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
