@@ -30,7 +30,9 @@
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "prepare": "nuxt-module-build --stub && nuxi prepare playground"
+    "prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
     "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27453291.e891ea0"
