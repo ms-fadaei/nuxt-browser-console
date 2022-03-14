@@ -386,7 +386,7 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27453291.e891ea0", "@nuxt/kit@npm:@nuxt/kit-edge@latest":
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27453291.e891ea0":
   version "3.0.0-27453291.e891ea0"
   resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27453291.e891ea0.tgz#d214e6f9d7a90ea5a11726bc16698f72aac307c3"
   integrity sha512-kZBwSAt+Cr7rwgxpsDZp5hE4gALI+cqxDAWuITljB8NpjgX7m033luXwS04SzkkUe0z/L4qp4m3jW+xEtR25GQ==
@@ -410,7 +410,7 @@
     unimport "0.0.8"
     untyped "^0.4.2"
 
-"@nuxt/module-builder@latest":
+"@nuxt/module-builder@0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@nuxt/module-builder/-/module-builder-0.1.7.tgz#6de83fa24a839265d43abdb5ecf8ec85456ca765"
   integrity sha512-ueTrJhXrKKxGp6VAe2C/nOqTeRoy0qfq9RH2QVl0kq0duDyQHCe1e8dw8yBbYjTlSvfqBPYaraxpX8i2zis2cw==
