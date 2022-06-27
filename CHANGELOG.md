@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ms-fadaei/nuxt-browser-console/compare/v1.2.0...v1.3.0) (2022-06-27)
+
+
+### Features
+
+* export meta ([ce3af3c](https://github.com/ms-fadaei/nuxt-browser-console/commit/ce3af3cfe88484c5539bb904ccea38df27dd07e1))
+* export meta ([4c7a198](https://github.com/ms-fadaei/nuxt-browser-console/commit/4c7a1983107d28dfd81fe6720de8243f71fefbbb))
+
+
+### Bug Fixes
+
+* show missid logs on the client ([ad051ea](https://github.com/ms-fadaei/nuxt-browser-console/commit/ad051ea053a951c69c751c75bb02e98c64feb9df))
+
 ## [1.2.0](https://github.com/ms-fadaei/nuxt-browser-console/compare/v1.1.0...v1.2.0) (2021-06-30)
 
 
