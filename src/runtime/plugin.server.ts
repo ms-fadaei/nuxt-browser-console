@@ -1,4 +1,3 @@
-/* eslint-disable import/no-duplicates */
 import { defineNuxtPlugin, useHydration } from '#app'
 import ConsoleReporter from './helpers/console-reporter'
 
