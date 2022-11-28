@@ -27,7 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
     for (const pathString of pluginsToSync) {
       addPluginTemplate({
         src: resolve(runtimeDir, pathString),
-        fileName: join(namespace, pathString),
+        filename: join(namespace, pathString),
         options
       })
     }
@@ -39,7 +39,7 @@ export default defineNuxtModule<ModuleOptions>({
       for (const file of readdirSync(path)) {
         addTemplate({
           src: resolve(path, file),
-          fileName: join(namespace, pathString, file)
+          filename: join(namespace, pathString, file)
         })
       }
     }
