@@ -8,7 +8,7 @@
 
 > receive server-side and client-side logs/errors/warnings inside the browser console <br>
 
-> ⚠️ If you are using nuxt 3, try `nuxt-browser-console@next`
+> ⚠️ If you are using nuxt 3, see the [next](https://github.com/ms-fadaei/nuxt-browser-console/tree/next) branch
 
 With this module, you can use browser console methods. No matter you are using this module inside the server or client, the messages are always shown in the browser console. A good and cheap way to monitoring server events in the production environment (for example, Axios request and response information can be logged into the browser console).
 
