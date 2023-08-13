@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "husky": "7.0.4",
     "jest": "27.3.1",
-    "lint-staged": "12.3.5",
+    "lint-staged": "13.3.0",
     "nuxt-edge": "2.16.0-27277936.ab1c6cb4",
     "playwright": "1.16.3",
     "prettier": "2.4.1",
